@@ -1,0 +1,234 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 140px;
+  margin-bottom: 30px;
+}
+
+header .logo {
+  height: 40px;
+}
+
+header .button {
+  color: #ffffff;
+  background-color: #FF5D50;
+  border-radius: 22px;
+  padding: 8px 32px;
+  font-size: 16px;
+  border: none;
+  font-weight: bold;
+}
+
+header .button:hover {
+  color: #FF5D50;
+  background-color: #ffffff;
+  border: 1px solid #FF5D50;
+}
+
+.banner {
+  color: #221E1F;
+  padding: 0 140px 0;
+  margin-bottom: 300px;
+}
+
+.banner h2 {
+  margin: 92px 0 180px 0;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.wrap {
+  max-width: 910px;
+  margin: 0 auto;
+}
+
+.wrap .price {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .price h3 {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+.wrap .price .pricelist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 54px;
+}
+
+.wrap .price .pricelist .button {
+  font-size: 18px;
+  color: #56C4C5;
+  border: 1px solid #56C4C5;
+  background-color: #ffffff;
+  padding: 12px 32px;
+  border-radius: 27px;
+}
+
+.wrap .price .pricelist .button:hover {
+  color: #ffffff;
+  background-color: #56C4C5;
+}
+
+.wrap .priceinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.wrap .priceinfo h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+}
+
+.wrap .priceinfo .infotext {
+  text-align: center;
+  margin-bottom: 32px;
+  line-height: 24px;
+}
+
+.wrap .cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .cost .costnum {
+  text-align: center;
+  background-color: #F5F5F5;
+  padding: 24px 32px;
+  border-radius: 12px;
+  gap: 21px;
+}
+
+.wrap .cost .costnum p {
+  font-size: 12px;
+  color: #221E1F;
+}
+
+.wrap .cost .costnum .num {
+  font-size: 32px;
+}
+
+.wrap .cost .costnum .num span {
+  font-size: 12px;
+}
+
+.bgprice .bgcolor {
+  position: absolute;
+  background-color: #F7F9FD;
+  width: 100%;
+  height: 470px;
+  border-radius: 0 0 0 300px;
+  z-index: -15;
+}
+
+.bgprice .bgimg {
+  position: absolute;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg);
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  width: 885px;
+  height: 559px;
+  z-index: -10;
+}
+/*# sourceMappingURL=second.css.map */

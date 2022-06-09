@@ -1,0 +1,30 @@
+@import "cssreset";
+@import "header";
+@import "banner";
+@import "main";
+
+
+
+
+
+
+.bgprice{
+    .bgcolor{
+        position: absolute;
+        background-color: #F7F9FD;
+        width: 100%;
+        height: 470px;
+        border-radius: 0 0 0 300px;
+        z-index: -15;
+    }
+    .bgimg{
+        position: absolute;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg);
+        background-repeat: no-repeat;
+        top: 0;
+        right: 0;
+        width: 885px;
+        height: 559px;
+        z-index: -10;
+    }
+}
