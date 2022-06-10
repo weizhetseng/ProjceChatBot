@@ -162,9 +162,19 @@ header .button:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 100px;
+  gap: 16px;
 }
 
-.wrap .priceinfo h4 {
+.wrap .priceinfo .info {
+  padding-top: 10px;
+  background-color: #ffffff;
+  width: 440px;
+  -webkit-box-shadow: 0 2px 10px #00000014;
+          box-shadow: 0 2px 10px #00000014;
+  border-radius: 12px;
+}
+
+.wrap .priceinfo .info h4 {
   text-align: center;
   font-weight: bold;
   font-size: 24px;
@@ -173,10 +183,14 @@ header .button:hover {
   margin-bottom: 32px;
 }
 
-.wrap .priceinfo .infotext {
+.wrap .priceinfo .info .infotext {
   text-align: center;
   margin-bottom: 32px;
   line-height: 24px;
+}
+
+.wrap .infocontent {
+  padding: 0 23px 32px 29px;
 }
 
 .wrap .cost {
@@ -189,6 +203,7 @@ header .button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 32px;
 }
 
 .wrap .cost .costnum {
@@ -202,6 +217,7 @@ header .button:hover {
 .wrap .cost .costnum p {
   font-size: 12px;
   color: #221E1F;
+  margin-bottom: 8px;
 }
 
 .wrap .cost .costnum .num {
@@ -210,6 +226,67 @@ header .button:hover {
 
 .wrap .cost .costnum .num span {
   font-size: 12px;
+}
+
+.wrap .cost .costnum .numcolor {
+  color: #56C4C5;
+}
+
+.wrap .contentlist {
+  margin-bottom: 32px;
+}
+
+.wrap .contentlist li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.wrap .button {
+  font-size: 18px;
+  border: 1px solid #56C4C5;
+  padding: 12px 32px;
+  border-radius: 27px;
+  color: #ffffff;
+  background-color: #56C4C5;
+}
+
+.wrap .button:hover {
+  color: #56C4C5;
+  background-color: #ffffff;
+}
+
+.wrap .question {
+  margin-bottom: 100px;
+}
+
+.wrap .question h3 {
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.wrap .question .questiontext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 32px;
+  margin-bottom: 16px;
+  -webkit-box-shadow: 0 2px 10px #00000014;
+          box-shadow: 0 2px 10px #00000014;
+  border-radius: 12px;
+}
+
+footer {
+  background-color: #F5F5F5;
+  padding: 16px;
+  text-align: center;
 }
 
 .bgprice .bgcolor {
