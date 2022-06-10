@@ -1,0 +1,36 @@
+footer{
+    .footerbox{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 503px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 320px;
+        h3{
+            font-weight: bold;
+            font-size: 32px;
+            margin-bottom: 48px;
+        }
+        a{
+            color: #ffffff;
+            background-color: #56C4C5;
+            border-radius: 27px;
+            padding: 12px 32px;
+            &:hover{
+                color: #56C4C5;
+                background-color: #ffffff;
+                border: 1px solid #56C4C5;
+            }
+        }
+    }
+    .copyright{
+        p{
+            text-align: center;
+            background-color: #F5F5F5;
+            padding: 16px;
+        }
+    }
+}
