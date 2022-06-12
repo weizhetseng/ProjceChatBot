@@ -6,6 +6,50 @@
 body {
     color: #221E1F;
 
+    .bgbox {
+        position: relative;
+
+        .bgcover {
+            position: absolute;
+            background-color: #f7f9fd;
+            width: 100%;
+            height: 470px;
+            border-radius: 0 0 0 300px;
+            z-index: -15;
+        }
+
+        .bgimg {
+            position: absolute;
+            background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg);
+            background-repeat: no-repeat;
+
+            background-size: cover;
+            top: 0;
+            right: 0;
+            width: 885px;
+            height: 559px;
+            z-index: -10;
+        }
+
+        .bdcircle {
+
+            position: absolute;
+            background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
+            background-repeat: no-repeat;
+
+            background-size: cover;
+            width: 360px;
+            height: 360px;
+            top: 876px;
+            left: -267px;
+            z-index: 99;
+        }
+
+    }
+
+
+
+
     .topBtn {
         display: block;
         position: fixed;
@@ -23,12 +67,26 @@ body {
 
 @media (max-width: 767px) {
     body {
+        .bgbox {
+            .bgimg {
+                background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg);
+                max-width: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                top: 66px;
+                left: 0;
+                z-index: -10;
+            }
+        }
+
 
         .topBtn {
             width: 50px;
             height: 50px;
         }
     }
+
 
 
 
@@ -339,7 +397,8 @@ header {
                 .pricetext1 {
                     width: 139px;
                     padding: 16px 24px;
-                    .textbg{
+
+                    .textbg {
                         font-size: 28px;
                     }
                 }
@@ -347,7 +406,8 @@ header {
                 .pricetext2 {
                     width: 139px;
                     padding: 16px 27px;
-                    .textbg{
+
+                    .textbg {
                         font-size: 28px;
                     }
                 }
