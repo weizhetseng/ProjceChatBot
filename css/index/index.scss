@@ -2,8 +2,8 @@
 
 body {
     color: #221E1F;
-    background-image: url(/img/bg_home.svg),
-        url(/img/ball01.svg), url(/img/ball02.svg), url(/img/ball03.svg);
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg),
+        url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
     background-repeat: no-repeat;
     background-size: 850px 768px, 360px 360px, 310px 310px, 150px 150px;
     background-position: right top, -222px 589px, 1156px 1594px, 130px 2650px;
@@ -25,8 +25,8 @@ body {
 
 @media (max-width: 767px) {
     body {
-        background-image: url(/img/bg_home_sm.svg),
-            url(/img/ball01.svg), url(/img/ball02.svg), url(/img/ball03.svg);
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg),
+        url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
 
         background-size: 350px 350px, 260px 260px, 210px 210px, 150px 150px;
         background-position: 50% 391px, -162px 789px, 580px 2494px, 100px 3690px;
@@ -44,8 +44,8 @@ body {
 
 @media (max-width: 375px) {
     body {
-        background-image: url(/img/bg_home_sm.svg),
-            url(/img/ball01.svg), url(/img/ball02.svg), url(/img/ball03.svg);
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg),
+        url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg);
 
         background-size: 350px 350px, 126px 126px, 135px 135px, 153px 153px;
         background-position: 50% 391px, -77px 823px, 287px 3267px, -76px 5100px;
@@ -66,7 +66,7 @@ header {
 
     h1 {
         a {
-            background-image: url(/img/logo.png);
+            background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/logo.png);
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -147,7 +147,7 @@ header {
     }
 
     .bannerimg {
-        background-image: url(/img/home.svg);
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -562,7 +562,7 @@ header {
 
 footer {
     .footerbox {
-        background-image: url(/img/home_footer.svg);
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -616,7 +616,7 @@ footer {
 @media (max-width: 767px) {
     footer {
         .footerbox {
-            background-image: url(/img/footer_sm.svg);
+            background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg);
 
             .footertext {
                 h3 {
@@ -631,7 +631,7 @@ footer {
 @media (max-width: 375px) {
     footer {
         .footerbox {
-            background-image: url(/img/bg.png);
+            background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/footer_sm.svg);
             height: 461px;
         }
     }
