@@ -1,7 +1,7 @@
 @import "cssreset";
 
 body {
-
+    color: #221E1F;
     background-image: url(/img/bg_home.svg),
         url(/img/ball01.svg), url(/img/ball02.svg), url(/img/ball03.svg);
     background-repeat: no-repeat;
@@ -27,10 +27,17 @@ body {
     body {
         background-image: url(/img/bg_home_sm.svg),
             url(/img/ball01.svg), url(/img/ball02.svg), url(/img/ball03.svg);
-        
+
         background-size: 350px 350px, 260px 260px, 210px 210px, 150px 150px;
         background-position: 50% 391px, -162px 789px, 580px 2494px, 100px 3690px;
+
+        .topBtn {
+            width: 50px;
+            height: 50px;
+        }
     }
+
+
 
 }
 
@@ -39,7 +46,7 @@ body {
     body {
         background-image: url(/img/bg_home_sm.svg),
             url(/img/ball01.svg), url(/img/ball02.svg), url(/img/ball03.svg);
-        
+
         background-size: 350px 350px, 126px 126px, 135px 135px, 153px 153px;
         background-position: 50% 391px, -77px 823px, 287px 3267px, -76px 5100px;
     }
@@ -212,7 +219,7 @@ header {
     max-width: 1088px;
     margin: 0 auto;
     padding: 0 20px;
-    color: #221E1F;
+    
 
     .accounts {
         text-align: center;
@@ -497,28 +504,57 @@ header {
 }
 
 @media (max-width: 375px) {
-    .container{
+    .container {
         padding: 0 20px;
+
         .accounts {
-        h3 {
-            font-size: 28px;
-        }
+            h3 {
+                font-size: 28px;
+            }
 
-        ul {
-            li {
-                img {
-                    width: 60px;
-                    height: 60px;
+            ul {
+                li {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    h4 {
+                        font-size: 18px;
+                    }
                 }
-
-                h4 {
-                    font-size: 18px;
+            }
+        }
+        .role{
+            h3{
+                font-size: 28px;
+            }
+            span{
+                font-size: 18px;
+            }
+        }
+        .function{
+            .sidetext{
+                h3{
+                    font-size: 28px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+        .comments{
+            h3{
+                font-size: 28px;
+            }
+            ul{
+                li{
+                    width: 335px;
                 }
             }
         }
     }
-    }
-    
+
 }
 
 

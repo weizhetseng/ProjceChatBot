@@ -57,6 +57,33 @@ a {
           box-sizing: border-box;
 }
 
+/*background*/
+body {
+  color: #221E1F;
+}
+
+body .topBtn {
+  display: block;
+  position: fixed;
+  background-image: url(/img/top.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 70px;
+  height: 70px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
+
+@media (max-width: 767px) {
+  body .topBtn {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/*header*/
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,8 +98,14 @@ header {
   margin-bottom: 30px;
 }
 
-header .logo {
+header h1 a {
+  background-image: url(/img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 218px;
   height: 40px;
+  display: block;
 }
 
 header .button {
@@ -82,79 +115,99 @@ header .button {
   padding: 8px 32px;
   font-size: 16px;
   border: none;
-  font-weight: bold;
 }
 
 header .button:hover {
   color: #FF5D50;
-  background-color: #ffffff;
   border: 1px solid #FF5D50;
+  background-color: #ffffff;
 }
 
+@media (max-width: 767px) {
+  header {
+    padding: 12px 20px;
+    border-bottom: 2px solid #F5CA52;
+  }
+}
+
+@media (max-width: 375px) {
+  header h1 a {
+    width: 130px;
+    height: 24px;
+  }
+}
+
+/*banner*/
 .banner {
-  color: #221E1F;
-  padding: 0 140px 0;
-  margin-bottom: 300px;
+  padding: 0 140px;
+  margin: 92px 0 280px;
 }
 
 .banner h2 {
-  margin: 92px 0 180px 0;
-  font-size: 48px;
   font-weight: bold;
+  font-size: 48px;
+  line-height: 70px;
   margin-bottom: 16px;
 }
 
-.wrap {
+.banner p {
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner h2 {
+    font-size: 32px;
+  }
+}
+
+.container {
   max-width: 910px;
   margin: 0 auto;
 }
 
-.wrap .price {
+.container .Program {
+  margin-bottom: 100px;
+}
+
+.container .Program h3 {
   text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+.container .Program .ProgramSelect {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrap .price h3 {
-  font-weight: bold;
-  font-size: 32px;
+  gap: 16px;
   margin-bottom: 48px;
 }
 
-.wrap .price .pricelist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 16px;
-  margin-bottom: 54px;
-}
-
-.wrap .price .pricelist .button {
-  font-size: 18px;
+.container .Program .ProgramSelect .number {
   color: #56C4C5;
   border: 1px solid #56C4C5;
   background-color: #ffffff;
-  padding: 12px 32px;
   border-radius: 27px;
+  padding: 12px 32px;
+  font-size: 16px;
 }
 
-.wrap .price .pricelist .button:hover {
+.container .Program .ProgramSelect .number:hover {
   color: #ffffff;
   background-color: #56C4C5;
 }
 
-.wrap .priceinfo {
+.container .Program .Programinfolist {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,38 +215,39 @@ header .button:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 100px;
-  gap: 16px;
 }
 
-.wrap .priceinfo .info {
-  padding-top: 10px;
-  background-color: #ffffff;
-  width: 440px;
+.container .Program .Programinfolist .Programinfoitem {
+  border-radius: 12px;
   -webkit-box-shadow: 0 2px 10px #00000014;
           box-shadow: 0 2px 10px #00000014;
-  border-radius: 12px;
+  max-width: 440px;
+  padding-top: 10px;
 }
 
-.wrap .priceinfo .info h4 {
+.container .Program .Programinfolist .Programinfoitem h4 {
   text-align: center;
-  font-weight: bold;
   font-size: 24px;
+  font-weight: bold;
   border-bottom: 1px solid #DDDDDD;
   padding-bottom: 16px;
   margin-bottom: 32px;
+  line-height: 35px;
 }
 
-.wrap .priceinfo .info .infotext {
+.container .Program .Programinfolist .Programinfoitem .priceinfo {
   text-align: center;
   margin-bottom: 32px;
-  line-height: 24px;
+  line-height: 1.5;
+  margin-bottom: 32px;
 }
 
-.wrap .infocontent {
+.container .Program .Programinfolist .Programinfoitem .priceContent {
   padding: 0 23px 32px 29px;
+  text-align: center;
 }
 
-.wrap .cost {
+.container .Program .Programinfolist .Programinfoitem .priceContent .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,109 +257,158 @@ header .button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   margin-bottom: 32px;
 }
 
-.wrap .cost .costnum {
-  text-align: center;
+.container .Program .Programinfolist .Programinfoitem .priceContent .price .pricetext1 {
   background-color: #F5F5F5;
-  padding: 24px 32px;
   border-radius: 12px;
-  gap: 21px;
+  padding: 24px 32px;
 }
 
-.wrap .cost .costnum p {
+.container .Program .Programinfolist .Programinfoitem .priceContent .price .pricetext1 .pricetextsm {
   font-size: 12px;
-  color: #221E1F;
   margin-bottom: 8px;
 }
 
-.wrap .cost .costnum .num {
+.container .Program .Programinfolist .Programinfoitem .priceContent .price .pricetext1 .textbg {
+  color: #56C4C5;
   font-size: 32px;
 }
 
-.wrap .cost .costnum .num span {
+.container .Program .Programinfolist .Programinfoitem .priceContent .price .pricetext1 .textbg .textsm {
   font-size: 12px;
+  font-weight: bold;
 }
 
-.wrap .cost .costnum .numcolor {
-  color: #56C4C5;
+.container .Program .Programinfolist .Programinfoitem .priceContent .price .pricetext2 {
+  background-color: #F5F5F5;
+  border-radius: 12px;
+  padding: 24px 39px;
 }
 
-.wrap .contentlist {
+.container .Program .Programinfolist .Programinfoitem .priceContent .price .pricetext2 .pricetextsm {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.container .Program .Programinfolist .Programinfoitem .priceContent .price .pricetext2 .textbg {
+  font-size: 32px;
+}
+
+.container .Program .Programinfolist .Programinfoitem .priceContent .price .pricetext2 .textbg .textsm {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.container .Program .Programinfolist .Programinfoitem .priceContent .function {
   margin-bottom: 32px;
 }
 
-.wrap .contentlist li {
+.container .Program .Programinfolist .Programinfoitem .priceContent .function li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 12px;
   margin-bottom: 16px;
 }
 
-.wrap .button {
-  font-size: 18px;
-  border: 1px solid #56C4C5;
-  padding: 12px 32px;
-  border-radius: 27px;
-  color: #ffffff;
-  background-color: #56C4C5;
+.container .Program .Programinfolist .Programinfoitem .priceContent .function li p {
+  margin-left: 13px;
 }
 
-.wrap .button:hover {
+.container .Program .Programinfolist .Programinfoitem .priceContent .XP {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: #56C4C5;
+  border-radius: 27px;
+  padding: 12px 32px;
+  font-size: 16px;
+}
+
+.container .Program .Programinfolist .Programinfoitem .priceContent .XP:hover {
   color: #56C4C5;
   background-color: #ffffff;
+  border: 1px solid #56C4C5;
 }
 
-.wrap .question {
+.container .QA {
   margin-bottom: 100px;
 }
 
-.wrap .question h3 {
-  font-weight: bold;
+.container .QA h3 {
   font-size: 32px;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 48px;
 }
 
-.wrap .question .questiontext {
+.container .QA .question {
+  -webkit-box-shadow: 0 2px 10px #00000014;
+          box-shadow: 0 2px 10px #00000014;
+  border-radius: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 16px 32px;
   margin-bottom: 16px;
-  -webkit-box-shadow: 0 2px 10px #00000014;
-          box-shadow: 0 2px 10px #00000014;
-  border-radius: 12px;
 }
 
-footer {
+.container .QA .question h4 {
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .ProgramSelect {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .Programinfolist {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Programinfolist .Programinfoitem {
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Program h3 {
+    font-size: 28px;
+  }
+  .Program .Programinfolist .Programinfoitem {
+    width: 335px;
+  }
+  .Program .Programinfolist .Programinfoitem .pricetext1 {
+    width: 139px;
+    padding: 16px 24px;
+  }
+  .Program .Programinfolist .Programinfoitem .pricetext1 .textbg {
+    font-size: 28px;
+  }
+  .Program .Programinfolist .Programinfoitem .pricetext2 {
+    width: 139px;
+    padding: 16px 27px;
+  }
+  .Program .Programinfolist .Programinfoitem .pricetext2 .textbg {
+    font-size: 28px;
+  }
+}
+
+footer p {
+  text-align: center;
   background-color: #F5F5F5;
   padding: 16px;
-  text-align: center;
-}
-
-.bgprice .bgcolor {
-  position: absolute;
-  background-color: #F7F9FD;
-  width: 100%;
-  height: 470px;
-  border-radius: 0 0 0 300px;
-  z-index: -15;
-}
-
-.bgprice .bgimg {
-  position: absolute;
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg);
-  background-repeat: no-repeat;
-  top: 0;
-  right: 0;
-  width: 885px;
-  height: 559px;
-  z-index: -10;
 }
 /*# sourceMappingURL=second.css.map */
